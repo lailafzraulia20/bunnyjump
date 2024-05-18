@@ -1,0 +1,309 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2project>
+    <name>New project</name>
+    <description></description>
+    <version>1.0.0.0</version>
+    <author></author>
+    <author-email></author-email>
+    <author-website>http://</author-website>
+    <app-id>com.mycompany.myapp</app-id>
+    <unique-id>2m2oqhlgof90t</unique-id>
+    <saved-with-version>28000</saved-with-version>
+    <used-plugins>
+        <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
+        <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
+        <plugin author="Scirra" id="Text" version="1">Text</plugin>
+        <plugin author="Scirra" id="Touch" version="1">Touch</plugin>
+    </used-plugins>
+    <used-behaviors>
+        <behavior author="Scirra" id="Bullet" version="1">Bullet</behavior>
+        <behavior author="Scirra" id="Fade" version="1">Fade</behavior>
+        <behavior author="Scirra" id="Platform" version="1">Platform</behavior>
+        <behavior author="Scirra" id="jumpthru" version="1">Jump-thru</behavior>
+    </used-behaviors>
+    <used-effects />
+    <configurations>
+        <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
+    </configurations>
+    <window-size>
+        <width>480</width>
+        <height>854</height>
+    </window-size>
+    <pixel-rounding>0</pixel-rounding>
+    <preview-effects>1</preview-effects>
+    <use-loader-layout>0</use-loader-layout>
+    <configuration-settings>
+        <prop name="Clear background">Yes</prop>
+        <prop name="Enable WebGL">On</prop>
+        <prop name="Fullscreen in browser">Letterbox scale</prop>
+        <prop name="Fullscreen scaling">High quality</prop>
+        <prop name="Loader style">Progress bar &amp; logo</prop>
+        <prop name="Orientations">Portrait</prop>
+        <prop name="Pause on unfocus">No</prop>
+        <prop name="Physics engine">Box2D asm.js</prop>
+        <prop name="Preview browser">(default)</prop>
+        <prop name="Sampling">Linear</prop>
+        <prop name="Use high-DPI display">Yes</prop>
+    </configuration-settings>
+    <object-folder>
+        <object-type name="Background" sid="390659601008678">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="290608336747494" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Laila Fazriatun\AppData\Local\Temp\88873ca6-cf5a-4003-a89f-7071bd01ac54_jumper-assets.zip.c54\Sprites\Background\Background.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="ground_stone" sid="780012538831390">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Jumpthru" sid="581940075206843">
+                    <behavior id="jumpthru" />
+                </behavior-type>
+                <behavior-type name="Fade" sid="121741813410312">
+                    <behavior id="Fade" />
+                </behavior-type>
+                <behavior-type name="Bullet" sid="760881749131931">
+                    <behavior id="Bullet" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="283695720072530" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Laila Fazriatun\AppData\Local\Temp\ff91d870-2a72-48d4-b6e5-5dd9bcc2538b_jumper-assets.zip.38b\Sprites\Environment\ground_stone.png">
+                        <collision-poly>
+                            <point x="0.0136364" y="0.0555556" />
+                            <point x="0.5" y="0" />
+                            <point x="0.986364" y="0.0555556" />
+                            <point x="0.972727" y="0.5" />
+                            <point x="0.940909" y="0.759259" />
+                            <point x="0.5" y="0.944444" />
+                            <point x="0.05" y="0.796296" />
+                            <point x="0.0181818" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Laila Fazriatun\OneDrive\game\jumper-assets\Sprites\Environment\ground_stone_broken.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="player" sid="703532229613709">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Platform" sid="974309387801617">
+                    <behavior id="Platform" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="812802949262431" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.504274" original-source="C:\Users\Laila Fazriatun\AppData\Local\Temp\79ab871c-f16a-4afd-acb1-ee68b6ab312e_jumper-assets.zip.12e\Sprites\Players\bunny1_stand.png" />
+                </animation>
+                <animation framecount="1" loop="0" name="jump" pingpong="0" repeatcount="1" repeatto="0" sid="430245392262489" speed="5">
+                    <frame duration="1" hotspotX="0.505747" hotspotY="0.504762" original-source="C:\Users\Laila Fazriatun\OneDrive\game\jumper-assets\Sprites\Players\bunny1_jump.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Keyboard" sid="699963864036735">
+            <plugin id="Keyboard" />
+        </object-type>
+        <object-type name="gold_" sid="127196630162648">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="4" loop="1" name="Default" pingpong="1" repeatcount="1" repeatto="0" sid="154037247622718" speed="10">
+                    <frame duration="1" hotspotX="0.510204" hotspotY="0.510204" original-source="C:\Users\Laila Fazriatun\OneDrive\game\jumper-assets\Sprites\Items\gold_1.png">
+                        <collision-poly>
+                            <point x="0.142857" y="0.142857" />
+                            <point x="0.489796" y="0" />
+                            <point x="0.857143" y="0.142857" />
+                            <point x="1" y="0.489796" />
+                            <point x="0.857143" y="0.857143" />
+                            <point x="0.489796" y="1" />
+                            <point x="0.142857" y="0.857143" />
+                            <point x="0" y="0.489796" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Laila Fazriatun\OneDrive\game\jumper-assets\Sprites\Items\gold_2.png">
+                        <collision-poly>
+                            <point x="0.157895" y="0.125" />
+                            <point x="0.5" y="0" />
+                            <point x="0.842105" y="0.125" />
+                            <point x="1" y="0.5" />
+                            <point x="0.842105" y="0.875" />
+                            <point x="0.5" y="1" />
+                            <point x="0.157895" y="0.875" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.517241" hotspotY="0.510204" original-source="C:\Users\Laila Fazriatun\OneDrive\game\jumper-assets\Sprites\Items\gold_3.png">
+                        <collision-poly>
+                            <point x="0.172414" y="0.102041" />
+                            <point x="0.482759" y="0" />
+                            <point x="0.827586" y="0.102041" />
+                            <point x="1" y="0.489796" />
+                            <point x="0.827586" y="0.897959" />
+                            <point x="0.482759" y="1" />
+                            <point x="0.172414" y="0.897959" />
+                            <point x="0" y="0.489796" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.555556" hotspotY="0.510204" original-source="C:\Users\Laila Fazriatun\OneDrive\game\jumper-assets\Sprites\Items\gold_4.png">
+                        <collision-poly>
+                            <point x="0.111111" y="0.0204082" />
+                            <point x="0.444444" y="0" />
+                            <point x="0.888889" y="0.0204082" />
+                            <point x="1" y="0.489796" />
+                            <point x="0.888889" y="0.979592" />
+                            <point x="0.444444" y="1" />
+                            <point x="0.111111" y="0.979592" />
+                            <point x="0" y="0.489796" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="txtScore" sid="807929729677820">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="gameover" sid="473260818380875">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="264283541539021" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Laila Fazriatun\OneDrive\game\jumper-assets\Sprites\Other\gameover.png">
+                        <collision-poly>
+                            <point x="0.0229592" y="0.136364" />
+                            <point x="0.5" y="0.0454545" />
+                            <point x="0.982143" y="0.106061" />
+                            <point x="0.989796" y="0.939394" />
+                            <point x="0.5" y="0.969697" />
+                            <point x="0.0229592" y="0.863636" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="transparentLight" sid="657774795826197">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="655286369892039" speed="5">
+                    <frame duration="1" hotspotX="0.504" hotspotY="0.504" original-source="C:\Users\Laila Fazriatun\Downloads\kenney_onscreen-controls\Sprites\transparent-light\transparentLight02.png">
+                        <collision-poly>
+                            <point x="0.32" y="0.32" />
+                            <point x="0.496" y="0" />
+                            <point x="0.688" y="0.312" />
+                            <point x="1" y="0.496" />
+                            <point x="0.688" y="0.688" />
+                            <point x="0.496" y="1" />
+                            <point x="0.312" y="0.688" />
+                            <point x="0" y="0.496" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="transparentLight2" sid="857648377724722">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="425301429833307" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Laila Fazriatun\Downloads\kenney_onscreen-controls\Sprites\transparent-light\transparentLight22.png">
+                        <collision-poly>
+                            <point x="0.15" y="0.15" />
+                            <point x="0.5" y="0.0125" />
+                            <point x="0.85" y="0.15" />
+                            <point x="1" y="0.5" />
+                            <point x="0.85" y="0.85" />
+                            <point x="0.5" y="1" />
+                            <point x="0.15" y="0.85" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="transparentLight3" sid="207858245717636">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="388978866955100" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Laila Fazriatun\Downloads\kenney_onscreen-controls\Sprites\transparent-light\transparentLight23.png">
+                        <collision-poly>
+                            <point x="0.15" y="0.15" />
+                            <point x="0.5" y="0.0125" />
+                            <point x="0.85" y="0.15" />
+                            <point x="1" y="0.5" />
+                            <point x="0.85" y="0.85" />
+                            <point x="0.5" y="1" />
+                            <point x="0.15" y="0.85" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="lineLight" sid="497642246266703">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="325921588369327" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Laila Fazriatun\Downloads\kenney_onscreen-controls\Sprites\line-light\lineLight22.png">
+                        <collision-poly>
+                            <point x="0.15" y="0.15" />
+                            <point x="0.5" y="0" />
+                            <point x="0.85" y="0.15" />
+                            <point x="1" y="0.5" />
+                            <point x="0.85" y="0.85" />
+                            <point x="0.5" y="1" />
+                            <point x="0.15" y="0.85" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="lineLight2" sid="507507159212265">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="568816342797199" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Laila Fazriatun\Downloads\kenney_onscreen-controls\Sprites\line-light\lineLight23.png">
+                        <collision-poly>
+                            <point x="0.15" y="0.15" />
+                            <point x="0.5" y="0" />
+                            <point x="0.85" y="0.15" />
+                            <point x="1" y="0.5" />
+                            <point x="0.85" y="0.85" />
+                            <point x="0.5" y="1" />
+                            <point x="0.15" y="0.85" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Touch" sid="172556955522074">
+            <plugin id="Touch" />
+        </object-type>
+    </object-folder>
+    <families />
+    <layout-folder>
+        <layout>Layout 1.xml</layout>
+    </layout-folder>
+    <event-folder>
+        <event-sheet>Event sheet 1.xml</event-sheet>
+    </event-folder>
+    <global-instances>
+        <global-instance type="Keyboard" uid="7" />
+        <global-instance type="Touch" uid="13">
+            <properties>
+                <use-mouse-input>Yes</use-mouse-input>
+            </properties>
+        </global-instance>
+    </global-instances>
+    <sounds-folder />
+    <music-folder />
+    <files-folder>
+        <file-folder name="Icons">
+            <file name="icon-16.png" />
+            <file name="icon-32.png" />
+            <file name="icon-114.png" />
+            <file name="icon-128.png" />
+            <file name="icon-256.png" />
+            <file name="loading-logo.png" />
+        </file-folder>
+    </files-folder>
+</c2project>
